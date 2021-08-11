@@ -1,0 +1,138 @@
+*
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #e4e0dd;
+    font-family: 'Abril Fatface', serif;
+   
+
+}
+
+
+/* LANDING PAGE */
+.container1 {
+    display: grid;
+    align-items: center;
+    /* justify-content: center */
+    width: 100vw;
+    height: 100vh;
+    z-index: 9;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 0.2fr 2;
+    grid-template-areas: 
+    "logo logo logo logo"
+    "nav nav nav nav"
+    "landingImage landingImage landingImage landingImage"        
+}
+
+.landingImage {
+    grid-area: landingImage;
+    display: grid;
+    align-items: center;
+    justify-content: center
+    width: 80vw;
+    height: 90vh;
+    z-index: 9;
+}
+
+.tile__image {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  
+    width: 70%;
+    height: 70%;
+  }
+
+
+
+/* NAV BAR */
+
+nav {
+    grid-area: nav;
+    /* background-color: aqua; */
+    margin: auto;
+    align-items: center;
+    /* justify-content: space-between; */
+    font-size: 2rem;
+    z-index: 11;
+}
+
+li {
+    display: inline-block;
+    z-index: 10;
+    
+}
+
+li a {
+    text-decoration:  none;
+    color: grey;
+    font-family: 'Abril Fatface', serif;
+    z-index: 11;
+}
+
+.cool-link::after {
+
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: grey;
+    transition: width .3s
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    transition:  width .3s;
+
+}
+
+.logo {
+    grid-area: logo;
+    display: grid; 
+    /* background-color: red; */
+    align-items: center;
+    justify-items: center;
+    z-index: 10;
+}
+
+.logoimg {
+    height: 190px;
+    z-index: 10;
+}
+
+/* .myCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+} */
+
+.webgl
+{
+    /* grid-area: webgl  */
+    position: fixed;
+    bottom: 10%;
+    left: 0;
+
+    outline: none;
+    z-index: 9;
+
+    grid-area: landingImage;
+    display: grid;
+    place-content: center;
+    height: 100vh;
+  
+  
+/* align-items: center;
+    justify-content: center
+    width: 80vw;
+    height: 90vh;
+    z-index: 9; */
+} 
+
+/* NEW LANDING PAGE CODE */
+
+
+
+/*# sourceMappingURL=/app.c328ef1a.css.map */

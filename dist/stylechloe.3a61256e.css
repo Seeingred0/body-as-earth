@@ -1,0 +1,119 @@
+body {
+  font-family: 'Cardo', serif;    
+  color: var(--text-color);
+    background: var(--bg-color);
+    transition: 0.3s ease-out;
+    overflow-x: hidden;
+    height:fit-content  
+  }
+  
+  section {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 30px 5vw;
+    max-width: 1000px;
+    margin: auto;
+    place-items: center;
+    /* background-color: red; */
+  }
+
+  .sectionend {
+    min-height: 40vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 2rem;
+    padding: 30px 5vw;
+    max-width: 1000px;
+    margin: auto;
+    place-items: center;
+    /* background-color: red; */
+  }
+
+  
+  img {
+    max-height: 80vh;
+    width: 100%;
+    object-fit: contain;
+  
+    section:first-child & {
+      position: absolute;
+    }
+  }
+
+  .info {
+    max-height: 80vh;
+    width: 100%;
+    object-fit: contain;
+  
+    section:first-child & {
+      position: absolute;
+    }
+  }
+  
+  h1 {
+    font-family: "KENOKY-SemiBold";
+    font-feature-settings:"aalt";
+    color: #FFAF82;
+    display: flex;
+    font-size: 4rem;
+    z-index: 2;
+    line-height: 1.2;
+    font-weight: 700;
+    @media (max-width: 768px) {
+      font-size: 2rem;
+    }
+  }
+  
+  h2 {
+    font-size: 1.1rem;
+    max-width: 500px;
+    font-weight: 400;
+
+  }
+
+  h3 {
+    font-size: 1rem;
+    max-width: 500px;
+    font-weight: 400;
+
+  }
+
+  .center {
+    text-align: center;
+    font-size: 1.2rem;
+
+  }
+  
+  .credit {
+    font-family: Termina, sans-serif;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    a {
+      color: #fff;
+    }
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .content__back {
+
+    position: fixed;
+    top: 2%;
+    left: 3.3%;
+    margin: auto;
+    cursor: pointer;
+    background-color:transparent;
+    border-style: none;
+}
+  
+
+/*# sourceMappingURL=/stylechloe.3a61256e.css.map */
